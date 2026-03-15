@@ -225,14 +225,7 @@
     .cookie-btn:hover { background:#e8e8e8; }
 
     /* RESPONSIVE */
-    @media(max-width:1000px) {
-      .hero-grid { grid-template-columns:1fr; }
-      .grid-3 { grid-template-columns:repeat(2,1fr); }
-      .footer-grid { grid-template-columns:1fr 1fr; }
-    }
-    @media(max-width:720px) {
-      .site-header { background:rgba(5,8,20,.98); }
-      .nav { min-height:72px; padding:10px 0; gap:12px; }
+    @media(max-width:1024px) {
       .nav-links { display:none; }
       .nav-cta { gap:0; margin-left:auto; }
       .nav-cta .btn-secondary { display:none; }
@@ -244,6 +237,15 @@
         white-space:nowrap;
         box-shadow:0 8px 22px rgba(109,61,242,.34);
       }
+    }
+    @media(max-width:1000px) {
+      .hero-grid { grid-template-columns:1fr; }
+      .grid-3 { grid-template-columns:repeat(2,1fr); }
+      .footer-grid { grid-template-columns:1fr 1fr; }
+    }
+    @media(max-width:720px) {
+      .site-header { background:rgba(5,8,20,.98); }
+      .nav { min-height:72px; padding:10px 0; gap:12px; }
       .hero { padding:42px 0 52px; }
       .hero-grid { grid-template-columns:1fr; gap:26px; }
       .dash-top { grid-template-columns:1fr; }
