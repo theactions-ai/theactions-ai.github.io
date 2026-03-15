@@ -45,7 +45,12 @@
     h3 { font-size:20px; line-height:1.25; margin-bottom:10px; }
     .lead { font-size:19px; color:var(--muted); max-width:680px; margin-bottom:28px; }
     .mute { color:var(--muted); font-size:16px; }
-    .hl { background:linear-gradient(120deg,var(--brand),#c49eff); -webkit-background-clip:text; background-clip:text; color:transparent; }
+    .hl {
+      background:linear-gradient(120deg,var(--brand),#c49eff);
+      -webkit-background-clip:text; background-clip:text;
+      -webkit-text-fill-color:transparent; color:transparent;
+      -webkit-box-decoration-break:clone; box-decoration-break:clone;
+    }
 
     .btn {
       display:inline-flex; align-items:center; justify-content:center;
